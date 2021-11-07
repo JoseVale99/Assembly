@@ -46,5 +46,31 @@ decimal
 representación hexadecimal
 2.15 Captura y almacenamiento de datos
 numéricos
-2.16 Operaci
 ```
+
+### Anotaciones
+> Comandos para ejecutar:
+1. Abrir DosBox
+
+2. Montar carpeta de 8086 en raíz DosBox
+
+3. Z:> mount c c:\8086
+
+4.  Cambiar a directorio raiz
+
+    Z:> c:
+
+5.  Ensamblado y ejecución del archivo
+
+    C:> masm your_file_here.asm
+
+    C:> link your_file_here.obj
+
+    C:> your_file_here.exe
+
+
+6. *Crear nuevo archivo asm
+
+7. C:> edit file_name.asm
+
+
