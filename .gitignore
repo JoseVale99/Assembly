@@ -2,3 +2,10 @@ HELLO.EXE
 hello.asm
 HELLO.OBJ
 HELLO.MAP
+
+
+/.MAP
+/.EXE
+/.OBJ
+/.asm
+
