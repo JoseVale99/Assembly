@@ -65,4 +65,3 @@ main proc FAR
 main endp
 codigo ends
 end main
-;----------------------------------DirtyCode 2021--------------------------------------
