@@ -7,20 +7,14 @@ print macro cadena  ; Esta macro imprime en pantalla una cadena y como parametro
     int 21h
 endm  
 
-mostrar_caracter macro caracter
-    mov ah,02h      ; imprimo el caracter
-    mov dl,caracter        ; que esta guardado en r
-    add dl,30h      ; realizo el ajuste
-    int 21h 
-endm
-
 suma_caracter macro suma,n1, res
     mov bl,n1
     add suma,bl 
     mov al, suma      ; ACA SE HACE LA SUMA
     mov res,al 
+
 endm
-.286 ; si lo emulas en 8086 quita esto
+;.286 ; si lo emulas en 8086 quita esto
 pila segment stack
 db 32 DUP('stack--')
 pila ends
@@ -71,11 +65,24 @@ codigo segment 'code'
          MOV cx,0      ; itera    y cx disminuye en 1, se detiene hasta que cx valga 0
       print salto
       print letrero2
-      mostrar_caracter r 
+    ;imprimir resultado de dos digitos
+    AAM
+    mov bx,ax
+    
+    mov ah,02h
+    mov dl,bh
+    add dl,30h
+    int 21h
+
+    mov ah,02h
+    mov dl,bl
+    add dl,30h
+    int 21h
+      
      
      
-      mov ah,4ch        ; finaliza el programa
-      int 21h
+    mov ah,4ch        ; finaliza el programa
+    int 21h
 
     ret
     main ENDP
