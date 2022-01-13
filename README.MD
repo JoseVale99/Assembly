@@ -13,7 +13,7 @@ innovadoras en diferentes contextos.
 4.  Diseña e implementa interfaces para la automatización de sistemas de hardware y
 desarrollo del software asociado.
 
-### [Introducción al lenguaje ensamblador](UNIDAD I)
+### [Introducción al lenguaje ensamblador](UNIDADI)
 ```
 1.1 Importancia de la programación en
 lenguaje ensamblador.
@@ -26,7 +26,7 @@ lenguaje ensamblador.
 1.8 Desplegado de mensajes en el monitor
 ```
 
-### [Programación básica](UNIDAD II)
+### [Programación básica](UNIDADII)
 ```
 2.1 Ensamblador (y ligador) a utilizar
 2.2 Ciclos numéricos
@@ -73,4 +73,5 @@ numéricos
 
 7. C:> edit file_name.asm
 
-
+### Catedrático
+M.C. Luis Alberto Alonso Hernández
