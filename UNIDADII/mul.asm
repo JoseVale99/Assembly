@@ -123,7 +123,7 @@
    ;aam            ;separamos hex a dec
    mov ac,al      ;ac=01        mov al a ac como nuestro acarreo final
   
- 
+    
   
    ;Mostramos resultado
    mov ah,02h 
